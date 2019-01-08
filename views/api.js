@@ -15,7 +15,7 @@ export function fetchGreetings() {
     console.log('fetchGreetings')
     return fetch( "http://localhost:7000/ping" )
         .then( res => res.json())
-        .then( res => res)
+        .then( res => res.greeting)
         .catch((err) => {
             console.log(err)
         });
