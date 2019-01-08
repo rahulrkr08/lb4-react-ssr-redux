@@ -1,0 +1,6 @@
+{
+  "watch": ["server", "dist", "views"],
+  "ext": "ts,js",
+  "ignore": ["server/**/*.spec.ts"],
+  "exec": "npm run build:client & node index.js"
+}
