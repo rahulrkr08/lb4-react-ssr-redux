@@ -4,18 +4,19 @@ import {fetchData} from "../store";
 
 class Home extends React.Component {
     componentDidMount() {
-        fetchData();
+        this.props.fetchData();
     }
 
     render() {
         const { circuits } = this.props;
+        console.log("circuits:", circuits)
         return (
             <div>
                 <h2>F1 2018 Season Calendar</h2>
                 <ul>
-                    {/* { circuits.map( ({circuitId, circuitName, Location}) => (
+                    { circuits.map( ({circuitId, circuitName, Location}) => (
                         <li key={circuitId} >{circuitName} - {Location.locality}, {Location.country}</li>
-                    ))} */}
+                    ))}
                 </ul>
             </div>
         );

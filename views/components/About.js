@@ -9,10 +9,11 @@ class About extends React.Component {
     }
 
     render() {
-        const { greeting } = this.props;
+        console.log(this.props.greetings);
+        const { greetings } = this.props;
         return (
             <div>
-                <h2>About {greeting.greeting}</h2>                
+                <h2>About {greetings}</h2>                
             </div>
        );
     }
@@ -20,7 +21,7 @@ class About extends React.Component {
 About.serverFetch = fetchGreetingsData; // static declaration of data requirements
 
 const mapStateToProps = (state) => ({
-    greeting: state.data,
+    greetings : state.greetings,
 });
 
 const mapDispatchToProps = {
