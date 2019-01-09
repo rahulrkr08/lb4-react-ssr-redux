@@ -9,7 +9,6 @@ class Home extends React.Component {
 
     render() {
         const { circuits } = this.props;
-        console.log("circuits:", circuits)
         return (
             <div>
                 <h2>F1 2018 Season Calendar</h2>

@@ -9,7 +9,6 @@ class About extends React.Component {
     }
 
     render() {
-        console.log(this.props.greetings);
         const { greetings } = this.props;
         return (
             <div>
