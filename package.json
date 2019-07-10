@@ -29,7 +29,9 @@
     "test:dev": "lb-mocha --allow-console-logs dist/test/**/*.js && npm run posttest",
     "prestart": "npm run build",
     "start": "nodemon index.js",
-    "build:client": "webpack --progress"
+    "build:client": "webpack --progress",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -56,7 +58,8 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
@@ -95,5 +98,6 @@
     "webpack-bundle-analyzer": "^2.9.1",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.0.0"
-  }
+  },
+  "snyk": true
 }

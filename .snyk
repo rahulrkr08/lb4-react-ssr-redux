@@ -1,0 +1,68 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - '@loopback/boot > @loopback/service-proxy > loopback-datasource-juggler > loopback-connector > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - redux > lodash:
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/boot > @loopback/repository > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/service-proxy > loopback-datasource-juggler > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/boot > @loopback/service-proxy > loopback-datasource-juggler > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/service-proxy > loopback-datasource-juggler > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/core > @loopback/context > @loopback/metadata > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > strong-error-handler > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/service-proxy > loopback-datasource-juggler > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > @loopback/core > @loopback/context > @loopback/metadata > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > strong-error-handler > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/boot > @loopback/repository > loopback-datasource-juggler > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/service-proxy > loopback-datasource-juggler > loopback-connector > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/boot > @loopback/service-proxy > loopback-datasource-juggler > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/service-proxy > loopback-datasource-juggler > loopback-connector > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/boot > @loopback/service-proxy > @loopback/core > @loopback/context > @loopback/metadata > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/boot > @loopback/repository > loopback-datasource-juggler > loopback-connector > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/context > @loopback/metadata > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > loopback-connector > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > @loopback/core > @loopback/context > @loopback/metadata > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > loopback-connector > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > loopback-connector > async > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > @loopback/core > @loopback/context > @loopback/metadata > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
+    - '@loopback/rest-explorer > @loopback/rest > @loopback/openapi-v3 > @loopback/repository-json-schema > @loopback/repository > loopback-datasource-juggler > loopback-connector > strong-globalize > lodash':
+        patched: '2019-07-10T01:13:27.174Z'
