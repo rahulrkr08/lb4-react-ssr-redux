@@ -20,12 +20,13 @@ export class MyApplication extends BootMixin(
     this.sequence(MySequence);
 
     // Set up default home page
-    this.static('/assets', path.join(__dirname, '../../assets/'));
+    this.static('/assets', path.join(__dirname, '../assets/'));
 
     // Customize @loopback/rest-explorer configuration here
     this.bind(RestExplorerBindings.CONFIG).to({
       path: '/explorer',
     });
+
     this.component(RestExplorerComponent);
 
     this.projectRoot = __dirname;

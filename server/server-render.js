@@ -32,7 +32,6 @@ export async function serverRender(options) {
     const reduxState = store.getState();
     const helmetData = Helmet.renderStatic();
     
-    // res.writeHead(200, {"Content-Type": "text/html"});
     return htmlTemplate(reactDom, reduxState, helmetData);    
  });
 }
@@ -44,9 +43,9 @@ function htmlTemplate(reactDom, reduxState, helmetData) {
     <html>
     <head>
       <meta charset="utf-8">
+      <title>React SSR</title>
       ${helmetData.title.toString()}
       ${helmetData.meta.toString()}
-      <title>React SSR 5</title>
     </head>
     
     <body>

@@ -17,6 +17,7 @@ class About extends React.Component {
        );
     }
 }
+
 About.serverFetch = fetchGreetingsData; // static declaration of data requirements
 
 const mapStateToProps = (state) => ({
