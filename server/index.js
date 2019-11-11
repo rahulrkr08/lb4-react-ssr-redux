@@ -1,9 +1,12 @@
 const application = require('../dist');
-
+require('@babel/polyfill')
+    
 // Run the application
 application.main().then(async (app) => {
   
   await app.boot();
+
+  
 
   const responseObject = {
     responses: {
@@ -19,6 +22,8 @@ application.main().then(async (app) => {
       url: request.url
     };
 
+    console.log(options)
+
     response.send(await serverRender(options));
   }
 
@@ -26,9 +31,9 @@ application.main().then(async (app) => {
   app.route('get', '/{page}', responseObject, render);
 
   await app.start();
-
-  require("babel-register")({ presets: ["env"]});
+  require("@babel/register")({ presets: ["@babel/env"]});
   const { serverRender } = require('./server-render');
-    
+
+  
   console.log(`Server is running on port ${app.restServer.url}`);
 });

@@ -1,11 +1,11 @@
 import React from "react";
-import {renderToString} from "react-dom/server";
-import {StaticRouter, matchPath} from "react-router-dom";
-import {Provider as ReduxProvider} from "react-redux";
+import { renderToString } from "react-dom/server";
+import {StaticRouter, matchPath } from "react-router-dom";
+import {Provider as ReduxProvider } from "react-redux";
 import Helmet from "react-helmet";
 import routes from "../views/routes";
 import Layout from "../views/components/Layout";
-import createStore, {initializeSession} from "../views/store";
+import createStore, { initializeSession } from "../views/store";
 
 export async function serverRender(options) {
   
